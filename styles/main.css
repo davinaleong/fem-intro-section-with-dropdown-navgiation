@@ -16,15 +16,14 @@
   --clr-neutral-400: hsl(0, 0%, 41%);
   --clr-neutral-900: hsl(0, 0%, 8%);
 
-  --ff-primary: "Be Vietnam Pro", Arial, sans-serif;
+  --ff-primary: "Epilogue", Arial, sans-serif;
   --ff-body: var(--ff-primary);
   --ff-heading: var(--ff-primary);
 
-  --fw-regular: 400;
-  --fw-medium: 500;
+  --fw-regular: 500;
   --fw-bold: 700;
 
-  --fs-base: 16px;
+  --fs-base: 18px;
   --fs-300: 0.8125rem;
   --fs-400: 0.875rem;
   --fs-500: 0.9375rem;
@@ -48,12 +47,23 @@
 }
 /** Root - End **/
 
+/** General Styling **/
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
+}
+/** General Styling - End **/
+
 /** Utility - Colours **/
 .text-white {
   color: white;
 }
 .text-black {
   color: black;
+}
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
 }
 .text-neutral-400 {
   color: var(--clr-neutral-400);
@@ -68,6 +78,9 @@
 }
 .bg-black {
   background-color: black;
+}
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
 }
 .bg-neutral-400 {
   background-color: var(--clr-neutral-400);
@@ -88,14 +101,17 @@
 .fw-regular {
   font-weight: var(--fw-regular);
 }
-.fw-medium {
-  font-weight: var(--fw-medium);
-}
 .fw-bold {
   font-weight: var(--fw-bold);
 }
 
 /** Utility - Font Sizes **/
+.fs-100 {
+  font-size: var(--fs-100);
+}
+.fs-200 {
+  font-size: var(--fs-200);
+}
 .fs-300 {
   font-size: var(--fs-300);
 }
