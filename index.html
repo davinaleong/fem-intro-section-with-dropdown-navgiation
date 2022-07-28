@@ -27,6 +27,7 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        margin-top: 3em;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -143,12 +144,20 @@
       <section class="hero">
         <div class="container">
           <div class="even-columns">
-            <div>
-              <img src="./images/image-hero-mobile.png" alt="" srcset="" />
-              <img src="./images/image-hero-desktop.png" alt="" srcset="" />
+            <div class="hero-image">
+              <img
+                src="./images/image-hero-mobile.png"
+                alt=""
+                class="display-mobile"
+              />
+              <img
+                src="./images/image-hero-desktop.png"
+                alt=""
+                class="display-desktop"
+              />
             </div>
-            <div class="flow">
-              <h1 class="hero-heading">Make remote work</h1>
+            <div class="hero-content | flow text-center text-md-left">
+              <h1 class="hero-heading"><span>Make </span>remote work</h1>
               <p class="hero-text">
                 Get your team in sync, no matter your location. Streamline
                 processes, create team rituals, and watch productivity soar.
@@ -183,7 +192,10 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/davinaleong"
+          >Davina Leong</a
+        >.
       </div>
     </main>
   </body>
