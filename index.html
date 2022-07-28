@@ -35,9 +35,121 @@
   </head>
   <body>
     <main>
-      Features Company Careers About Login Register Make remote work Get your
-      team in sync, no matter your location. Streamline processes, create team
-      rituals, and watch productivity soar. Learn more
+      <header class="primary-header">
+        <a href="#" class="brand" aria-label="Snap">
+          <img src="./images/logo.svg" alt="Snap" />
+        </a>
+        <button
+          id="togglePrimaryNav"
+          class="toggle-primary-nav"
+          aria-label="#primaryNav"
+        >
+          <img
+            id="hamburgerIcon"
+            src="./images/icon-menu.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <img
+            id="closeIcon"
+            src="./images/icon-close-menu.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </button>
+        <nav id="primaryNav" class="primary-nav">
+          <ul class="nav">
+            <li class="nav-link dropdown">
+              <a
+                href="#"
+                class="nav-item dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                Features
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a href="#" class="nav-item" data-toggle="dropdown">
+                    Todo List
+                  </a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-item" data-toggle="dropdown">
+                    Calendar
+                  </a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-item" data-toggle="dropdown">
+                    Reminders
+                  </a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-item" data-toggle="dropdown">
+                    Planning
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-link">
+              <a
+                href="#"
+                class="nav-item dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                Company
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a href="#" class="nav-item" data-toggle="dropdown">
+                    History
+                  </a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-item" data-toggle="dropdown">
+                    Our Team
+                  </a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-item" data-toggle="dropdown">Blog</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-link">
+              <a href="#" class="nav-item" data-toggle="dropdown">Careers</a>
+            </li>
+            <li class="nav-link">
+              <a href="#" class="nav-item" data-toggle="dropdown">About</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="primary-nav-buttons">
+          <a href="#" class="btn btn-link">Login</a>
+          <a href="#" class="btn btn-neutral-outline">Register</a>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="even-columns">
+          <div>
+            <img src="./images/image-hero-mobile.png" alt="" srcset="">
+            <img src="./images/image-hero-desktop.png" alt="" srcset="">
+          </div>
+          <div class="flow">
+            <h1>Make remote work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+            <p>
+              <a href="#" class="btn btn-neutral">Learn more</a>
+            </p>
+            <div class="logos">
+              <p class="visually-hidden">Clients</p>
+              <img src="./images/client-databiz.svg" alt="Databiz" srcset="">
+              <img src="./images/client-audiophile.svg" alt="Audiophile" srcset="">
+              <img src="./images/client-meet.svg" alt="Meet" srcset="">
+              <img src="./images/client-maker.svg" alt="Maker" srcset="">
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div class="attribution">
         Challenge by
