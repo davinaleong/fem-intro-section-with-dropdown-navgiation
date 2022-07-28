@@ -99,7 +99,6 @@ main {
 .primary-header {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: 0.3fr 1fr 1fr;
   align-items: center;
   gap: var(--size-600);
   padding: var(--size-400);
@@ -112,9 +111,16 @@ main {
 }
 
 .primary-header .buttons {
-  justify-self: end;
   display: flex;
   gap: clamp(var(--size-300), 3vw, var(--size-700));
+}
+
+.primary-nav-collapse {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: var(--size-600);
+  height: 100%;
 }
 
 .nav-list {
@@ -241,7 +247,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: clamp(var(--size-100), 3vw, var(--size-600));
-  align-items: center;
+  align-items: end;
 }
 
 /** Content - End **/
