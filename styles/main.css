@@ -1,11 +1,11 @@
 /* Sections
     - Root
-    - Components
-      - Componets - Button
     - Content
       - Content - General Styling
       - Content - Primary Header
       - Content - Hero Section
+    - Components
+      - Componets - Button
     - Utility
       - Utility - Colours
       - Utility - Background Colours
@@ -29,7 +29,7 @@
   --fw-regular: 500;
   --fw-bold: 700;
 
-  --fs-base: 18px;
+  --fs-base: 16px;
   --fs-300: 0.8125rem;
   --fs-400: 0.875rem;
   --fs-500: 0.9375rem;
@@ -52,6 +52,75 @@
   --size-1100: 7rem;
 }
 /** Root - End **/
+
+/** Content **/
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-regular);
+  background-color: var(--clr-neutral-100);
+}
+
+/** Content - General Styling **/
+.primary-header {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 0.3fr 1fr 1fr;
+  align-items: center;
+  gap: var(--size-600);
+  padding: var(--size-400);
+}
+
+.primary-header .toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+
+.primary-header .buttons {
+  justify-self: end;
+  display: flex;
+  gap: var(--size-400);
+}
+
+.nav-list {
+  display: flex;
+  gap: var(--size-400);
+}
+
+.nav-link {
+  color: var(--clr-neutral-400);
+  text-decoration: none;
+}
+
+.nav-link:where(:hover, :focus) {
+  color: var(--clr-neutral-900);
+}
+
+.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+}
+
+.dropdown-toggle::after {
+  content: "";
+  display: block;
+  width: 0.625em;
+  height: 0.375em;
+  background-image: url("../images/icon-arrow-down.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: var(--size-100);
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+/** Content - Primary Header **/
+/** Content - Hero Section **/
+
+/** Content - End **/
 
 /** Components **/
 /** Components - Buttons **/
@@ -93,52 +162,9 @@
 .btn-neutral:where(:hover, :focus, :focus-within) {
   color: var(--clr-neutral-900);
   background-color: var(--clr-neutral-100);
+  font-weight: var(--fw-bold);
 }
 /** Components - End **/
-
-/** Content **/
-body {
-  font-family: var(--ff-body);
-  font-size: var(--fs-base);
-  font-weight: var(--fw-bold);
-  background-color: var(--clr-neutral-100);
-}
-
-/** Content - General Styling **/
-.primary-header {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 0.3fr 1fr 1fr;
-  align-items: center;
-  gap: var(--size-600);
-  padding: var(--size-400);
-}
-
-.primary-header .toggle {
-  display: none;
-  background-color: transparent;
-  border: none;
-}
-
-.primary-header .buttons {
-  justify-self: end;
-  display: flex;
-  gap: var(--size-400);
-}
-
-.nav-link {
-  color: var(--clr-neutral-400);
-  text-decoration: none;
-}
-
-.nav-link:where(:hover, :focus) {
-  color: var(--clr-neutral-900);
-}
-
-/** Content - Primary Header **/
-/** Content - Hero Section **/
-
-/** Content - End **/
 
 /** Utility - Colours **/
 .text-white {
