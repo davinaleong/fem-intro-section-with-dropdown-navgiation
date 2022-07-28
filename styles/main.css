@@ -145,12 +145,16 @@ body {
   display: none;
   gap: var(--size-100);
   position: absolute;
-  top: var(--size-600);
+  top: var(--size-700);
   padding: var(--size-400);
   background-color: var(--clr-neutral-100);
   border-radius: var(--size-200);
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
   min-width: 7em;
+}
+
+.dropdown-menu[data-open] {
+  display: grid;
 }
 
 /** Content - Primary Header **/
