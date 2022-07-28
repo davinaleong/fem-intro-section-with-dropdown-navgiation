@@ -126,6 +126,15 @@ body {
   gap: var(--size-400);
 }
 
+.nav-link {
+  color: var(--clr-neutral-400);
+  text-decoration: none;
+}
+
+.nav-link:where(:hover, :focus) {
+  color: var(--clr-neutral-900);
+}
+
 /** Content - Primary Header **/
 /** Content - Hero Section **/
 
