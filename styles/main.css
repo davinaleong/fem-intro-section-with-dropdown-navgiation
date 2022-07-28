@@ -180,8 +180,8 @@ main {
 .dropdown-toggle {
   display: inline-flex;
   align-items: center;
+  gap: var(--size-200);
   position: relative;
-  padding-right: 0.9em;
 }
 
 .dropdown-toggle::after {
@@ -274,10 +274,15 @@ main {
   .primary-header[data-open] .dropdown-menu {
     display: none;
     position: static;
+    gap: var(--size-400);
     padding-bottom: 0;
     top: auto;
     box-shadow: none;
     min-width: 7em;
+  }
+
+  .primary-header[data-open] .dropdown-toggle {
+    gap: var(--size-400);
   }
 
   .primary-header[data-open] .dropdown-menu[data-open] {
