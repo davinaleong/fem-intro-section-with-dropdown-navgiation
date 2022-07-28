@@ -1,5 +1,11 @@
 /* Sections
     - Root
+    - Components
+      - Componets - Button
+    - Content
+      - Content - General Styling
+      - Content - Primary Header
+      - Content - Hero Section
     - Utility
       - Utility - Colours
       - Utility - Background Colours
@@ -47,13 +53,83 @@
 }
 /** Root - End **/
 
-/** General Styling **/
+/** Components **/
+/** Components - Buttons **/
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--size-200) var(--size-400);
+  border-radius: var(--size-300);
+  text-decoration: none;
+  font-weight: var(--fw-regular);
+}
+
+.btn-neutral-link {
+  color: var(--clr-neutral-400);
+}
+
+.btn-neutral-link:where(:hover, :focus, :focus-within) {
+  color: var(--clr-neutral-900);
+}
+
+.btn-neutral-outline {
+  color: var(--clr-neutral-400);
+  background-color: var(--clr-neutral-100);
+  border: thin solid var(--clr-neutral-400);
+}
+
+.btn-neutral-outline:where(:hover, :focus, :focus-within) {
+  color: var(--clr-neutral-900);
+  border-color: var(--clr-neutral-900);
+}
+
+.btn-neutral {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-900);
+  border: thin solid var(--clr-neutral-900);
+}
+
+.btn-neutral:where(:hover, :focus, :focus-within) {
+  color: var(--clr-neutral-900);
+  background-color: var(--clr-neutral-100);
+}
+/** Components - End **/
+
+/** Content **/
 body {
   font-family: var(--ff-body);
   font-size: var(--fs-base);
   font-weight: var(--fw-bold);
+  background-color: var(--clr-neutral-100);
 }
-/** General Styling - End **/
+
+/** Content - General Styling **/
+.primary-header {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 0.3fr 1fr 1fr;
+  align-items: center;
+  gap: var(--size-600);
+  padding: var(--size-400);
+}
+
+.primary-header .toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+
+.primary-header .buttons {
+  justify-self: end;
+  display: flex;
+  gap: var(--size-400);
+}
+
+/** Content - Primary Header **/
+/** Content - Hero Section **/
+
+/** Content - End **/
 
 /** Utility - Colours **/
 .text-white {
