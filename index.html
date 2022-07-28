@@ -36,29 +36,25 @@
   </head>
   <body>
     <main>
-      <header class="primary-header">
+      <header class="primary-header" data-open>
         <a href="#" class="brand" aria-label="Snap">
           <img src="./images/logo.svg" alt="Snap" />
         </a>
-        <button
-          id="togglePrimaryNav"
-          class="toggle btn"
-          aria-label="#primaryNav"
-        >
+        <button class="toggle btn" aria-label="#primaryNav">
           <img
-            id="hamburgerIcon"
             src="./images/icon-menu.svg"
             alt=""
             aria-hidden="true"
+            class="icon-menu"
           />
           <img
-            id="closeIcon"
             src="./images/icon-close-menu.svg"
             alt=""
             aria-hidden="true"
+            class="icon-close"
           />
         </button>
-        <div class="primary-nav-collapse">
+        <div class="collapse">
           <nav id="primaryNav" class="primary-nav">
             <ul class="nav-list" role="list">
               <li class="nav-item dropdown">
@@ -72,7 +68,11 @@
                 <ul class="dropdown-menu" role="list">
                   <li class="dropdown-item">
                     <a href="#" class="nav-link">
-                      <img src="./images/icon-todo.svg" alt="" class="nav-icon" />
+                      <img
+                        src="./images/icon-todo.svg"
+                        alt=""
+                        class="nav-icon"
+                      />
                       Todo List
                     </a>
                   </li>
