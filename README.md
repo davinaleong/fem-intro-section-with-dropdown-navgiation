@@ -8,8 +8,8 @@ Demo page [here](https://davinaleong.github.io/fem-intro-section-with-dropdown-n
 
 ## How to Setup this Repo
 
-Clone this repo into your local environment.
-
-Run `npm run dev` to spin up a dev server.
-
-Happy coding!
+1. Fork this repo
+2. Run `npm install`
+3. Run `npm run dev`
+4. Go to [http://127.0.0.1:5173/](http://127.0.0.1:5173/) to view content.
+5. Happy coding!
