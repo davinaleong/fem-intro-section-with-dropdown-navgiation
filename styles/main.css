@@ -86,6 +86,15 @@ body {
 .nav-list {
   display: flex;
   gap: var(--size-400);
+  align-items: center;
+}
+
+.primary-header .primary-nav {
+  height: 100%;
+}
+
+.primary-header .nav-list {
+  height: 100%;
 }
 
 .nav-link {
